@@ -342,6 +342,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="w6H-5P-HrP">
+                                <rect key="frame" x="197" y="487.33333333333331" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -354,6 +357,7 @@
                             <constraint firstItem="15B-OZ-ZY8" firstAttribute="top" secondItem="vBj-tm-JzQ" secondAttribute="bottom" constant="25" id="7UF-C7-frB"/>
                             <constraint firstItem="k4g-Uq-jjs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Bnc-up-cv4"/>
                             <constraint firstItem="T7K-iC-9Kf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Dor-GQ-HRa"/>
+                            <constraint firstItem="w6H-5P-HrP" firstAttribute="top" secondItem="tq2-V8-1U7" secondAttribute="bottom" constant="-30" id="EQA-Oq-uox"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IxY-AZ-1ee" secondAttribute="trailing" constant="24" id="Iaw-cm-t6m"/>
                             <constraint firstItem="6ev-tz-LpG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="NXJ-hy-SV5"/>
                             <constraint firstItem="vBj-tm-JzQ" firstAttribute="top" secondItem="6ev-tz-LpG" secondAttribute="bottom" constant="25" id="PCU-LZ-0Dg"/>
@@ -373,6 +377,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QB5-6R-fYC" secondAttribute="bottom" constant="30" id="oLT-YS-dj9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vBj-tm-JzQ" secondAttribute="trailing" constant="24" id="puh-Ld-QJY"/>
                             <constraint firstItem="5Pm-T0-Po3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="q3S-bx-h1D"/>
+                            <constraint firstItem="w6H-5P-HrP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rMQ-wQ-kZ1"/>
                             <constraint firstItem="T7K-iC-9Kf" firstAttribute="top" secondItem="k4g-Uq-jjs" secondAttribute="bottom" constant="40" id="sIT-O8-870"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k4g-Uq-jjs" secondAttribute="trailing" constant="16" id="sWF-Wu-vzf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tq2-V8-1U7" secondAttribute="trailing" constant="100" id="unM-PL-yRb"/>
@@ -389,6 +394,7 @@
                     <navigationItem key="navigationItem" id="EGE-5s-2FK"/>
                     <connections>
                         <outlet property="EmailTextField" destination="uGV-Vm-82J" id="IJy-NG-X3x"/>
+                        <outlet property="activityIndicator" destination="w6H-5P-HrP" id="Mk2-CX-Vgd"/>
                         <outlet property="attributedTextForLogin" destination="gRt-SE-Gfe" id="CMh-fb-gxQ"/>
                         <outlet property="firstNameTextField" destination="Vri-Qm-uPY" id="jPS-ZV-FwB"/>
                         <outlet property="lastNameTextField" destination="xG8-Wj-xb7" id="kJo-M8-zhw"/>

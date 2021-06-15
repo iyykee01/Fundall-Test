@@ -9,72 +9,57 @@ import Foundation
 
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class Networking {
     
     /*:
-     Created a static variable instanciating the MovieList class
-     So i don't created instaces whenever i need to call the MovieList
+     Created a static variable instanciating the Networking class
      */
     static let shared = Networking()
     
     private let baseURL = "https://campaign.fundall.io"
+    private let token = ""
  
     
     
     //Register user
     //Post request to register a user with User model @Model
-    func registerUser(completion: @escaping([Movie]) -> ()) {
+    func registerUser(path: String, register: RegisterUser, completion: @escaping(Bool, JSON) -> ()) {
         
-        let request = NSMutableURLRequest(url: NSURL(string: "\(baseURL)")! as URL)
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json"
+        ]
         
-        let session = URLSession.shared
+        let registerUrl = baseURL + path
         
-        let dataTask = session.dataTask(with: request as URLRequest) { data, response, error in
-            guard let data = data else {
-                print("Network error: \(error!.localizedDescription)")
-                return
+        AF.request(registerUrl, method: .post, parameters: register, encoder: JSONParameterEncoder.default, headers: headers)
+            .response { response in
+                //debugPrint(response)
+                switch response.result {
+                
+                case .success(let data):
+                    do {
+                        let json = JSON(data!)
+                        if response.response?.statusCode == 200 {
+                            completion(true, json)
+                         
+                        }
+                        else {
+                           completion(false, json)
+                        }
+                    }
+                    
+                case .failure(let err):
+                    print(err.localizedDescription)
+                    completion(false, [])
+                }
+                
             }
-            
-            
-            guard let movies = try? JSONDecoder().decode(MoviesData.self, from: data) else {
-                print("Couldn't decode json")
-                return
-            }
-            completion(movies.movies)
-        }
-        dataTask.resume()
     }
 
     
 }
 
-
-
-
-struct MoviesData: Codable {
-    let movies: [Movie]
-    
-    private enum CodingKeys: String, CodingKey {
-        case movies = "results"
-    }
-}
-
-//Movie Model
-struct Movie: Codable {
-    
-    let title: String?
-    let year: String?
-    let rate: Double?
-    let posterImage: String?
-    var overview: String?
-    
-    // Set default Movie parameters for movie model
-    private enum CodingKeys: String, CodingKey {
-        case title, overview
-        case year = "release_date"
-        case rate = "vote_average"
-        case posterImage = "poster_path"
-    }
-}
 

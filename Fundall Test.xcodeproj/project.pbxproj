@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		62425F4F009A57191F49A7FF /* Pods_Fundall_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F35241A9AC327259DC20D /* Pods_Fundall_Test.framework */; };
+		D00BE9FF26787E3100A70F5D /* Register User Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00BE9FE26787E3100A70F5D /* Register User Model.swift */; };
+		D00BEA03267890C200A70F5D /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00BEA02267890C200A70F5D /* AlertMessage.swift */; };
 		D068D17826783D2100D32807 /* WelcomeBackScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068D17726783D2100D32807 /* WelcomeBackScreenViewController.swift */; };
 		D068D17B26783D6C00D32807 /* SignInScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068D17A26783D6C00D32807 /* SignInScreenViewController.swift */; };
 		D068D17E2678415800D32807 /* ResponsiveFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068D17D2678415800D32807 /* ResponsiveFont.swift */; };
@@ -24,6 +26,8 @@
 		1721608089584E35A1F9FE2E /* Pods-Fundall Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fundall Test.release.xcconfig"; path = "Target Support Files/Pods-Fundall Test/Pods-Fundall Test.release.xcconfig"; sourceTree = "<group>"; };
 		195E448454D53B045F4C8246 /* Pods-Fundall Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fundall Test.debug.xcconfig"; path = "Target Support Files/Pods-Fundall Test/Pods-Fundall Test.debug.xcconfig"; sourceTree = "<group>"; };
 		9A0F35241A9AC327259DC20D /* Pods_Fundall_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fundall_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00BE9FE26787E3100A70F5D /* Register User Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Register User Model.swift"; sourceTree = "<group>"; };
+		D00BEA02267890C200A70F5D /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
 		D068D17726783D2100D32807 /* WelcomeBackScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBackScreenViewController.swift; sourceTree = "<group>"; };
 		D068D17A26783D6C00D32807 /* SignInScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenViewController.swift; sourceTree = "<group>"; };
 		D068D17D2678415800D32807 /* ResponsiveFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveFont.swift; sourceTree = "<group>"; };
@@ -56,7 +60,6 @@
 				195E448454D53B045F4C8246 /* Pods-Fundall Test.debug.xcconfig */,
 				1721608089584E35A1F9FE2E /* Pods-Fundall Test.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -66,6 +69,14 @@
 				9A0F35241A9AC327259DC20D /* Pods_Fundall_Test.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D00BEA002678909E00A70F5D /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				D00BEA02267890C200A70F5D /* AlertMessage.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		D068D17326783C8200D32807 /* Sign Up Screen */ = {
@@ -131,6 +142,7 @@
 		D0B1C07E26771D1300F7FC6F /* Fundall Test */ = {
 			isa = PBXGroup;
 			children = (
+				D00BEA002678909E00A70F5D /* Alert */,
 				D0B5A8592678533E00799002 /* Font Family */,
 				D068D17C2678411600D32807 /* Helper Functions */,
 				D0B1C09626771ECE00F7FC6F /* Api Resources */,
@@ -148,6 +160,7 @@
 		D0B1C09326771EA400F7FC6F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D00BE9FE26787E3100A70F5D /* Register User Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -299,6 +312,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B5A85B26786EBF00799002 /* NetworkingClass.swift in Sources */,
+				D00BEA03267890C200A70F5D /* AlertMessage.swift in Sources */,
+				D00BE9FF26787E3100A70F5D /* Register User Model.swift in Sources */,
 				D068D17826783D2100D32807 /* WelcomeBackScreenViewController.swift in Sources */,
 				D068D17B26783D6C00D32807 /* SignInScreenViewController.swift in Sources */,
 				D0B1C08426771D1300F7FC6F /* SignUpScreen.swift in Sources */,

@@ -6,14 +6,16 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class SignUpScreen: UIViewController {
 
-    @IBOutlet weak var firstNameTextField: UITextField!
-    @IBOutlet weak var lastNameTextField: UITextField!
-    @IBOutlet weak var EmailTextField: UITextField!
-    @IBOutlet weak var phoneNumberTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var firstNameTextField: UITextField?
+    @IBOutlet weak var lastNameTextField: UITextField?
+    @IBOutlet weak var EmailTextField: UITextField?
+    @IBOutlet weak var phoneNumberTextField: UITextField?
+    @IBOutlet weak var passwordTextField: UITextField?
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak var attributedTextForLogin: UILabelDeviceClass!
     
@@ -57,11 +59,25 @@ class SignUpScreen: UIViewController {
     }
     
     
-
-    
-    
+    //This submits text field when signup button is pressed
     @IBAction func SignUpButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "goToSignIn", sender: self)
+        activityIndicator.startAnimating()
+        let registerUser = RegisterUser(firstname: firstNameTextField?.text ?? "", lastname: lastNameTextField?.text ?? "", email: EmailTextField?.text ?? "", password: passwordTextField?.text ?? "", password_confirmation: passwordTextField?.text ?? "")
+        
+        Networking.shared.registerUser(path: "/api/v1/register", register: registerUser) { [self] (isSuccess, json) in
+            activityIndicator.stopAnimating();
+            if isSuccess {
+                let alert = AlertMessage.shared.alertPop(status: json["error"]["status"].stringValue, message: json["error"]["message"].stringValue)
+                
+                // show the alert
+                self.present(alert, animated: true, completion: nil)
+                
+            }
+            else {
+                print(json)
+            }
+        }
+        //performSegue(withIdentifier: "goToSignIn", sender: self)
     }
     
 }
