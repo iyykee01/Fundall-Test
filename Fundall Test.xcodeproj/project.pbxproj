@@ -16,6 +16,7 @@
 		D0B1C08726771D1300F7FC6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B1C08526771D1300F7FC6F /* Main.storyboard */; };
 		D0B1C08926771D1500F7FC6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B1C08826771D1500F7FC6F /* Assets.xcassets */; };
 		D0B1C08C26771D1500F7FC6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B1C08A26771D1500F7FC6F /* LaunchScreen.storyboard */; };
+		D0B5A85B26786EBF00799002 /* NetworkingClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B5A85A26786EBF00799002 /* NetworkingClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D0B1C08826771D1500F7FC6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0B1C08B26771D1500F7FC6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0B1C08D26771D1500F7FC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B5A85A26786EBF00799002 /* NetworkingClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		D0B1C07E26771D1300F7FC6F /* Fundall Test */ = {
 			isa = PBXGroup;
 			children = (
+				D0B5A8592678533E00799002 /* Font Family */,
 				D068D17C2678411600D32807 /* Helper Functions */,
 				D0B1C09626771ECE00F7FC6F /* Api Resources */,
 				D0B1C09326771EA400F7FC6F /* Model */,
@@ -144,8 +147,16 @@
 		D0B1C09626771ECE00F7FC6F /* Api Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D0B5A85A26786EBF00799002 /* NetworkingClass.swift */,
 			);
 			path = "Api Resources";
+			sourceTree = "<group>";
+		};
+		D0B5A8592678533E00799002 /* Font Family */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Font Family";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B5A85B26786EBF00799002 /* NetworkingClass.swift in Sources */,
 				D068D17826783D2100D32807 /* WelcomeBackScreenViewController.swift in Sources */,
 				D068D17B26783D6C00D32807 /* SignInScreenViewController.swift in Sources */,
 				D0B1C08426771D1300F7FC6F /* SignUpScreen.swift in Sources */,

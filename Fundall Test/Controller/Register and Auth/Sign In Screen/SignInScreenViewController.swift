@@ -8,6 +8,8 @@
 import UIKit
 
 class SignInScreenViewController: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,8 +17,10 @@ class SignInScreenViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
  
     
-
+    @IBAction func canelButtonPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }

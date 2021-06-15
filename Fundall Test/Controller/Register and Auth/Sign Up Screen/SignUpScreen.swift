@@ -9,21 +9,55 @@ import UIKit
 
 class SignUpScreen: UIViewController {
 
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var EmailTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var attributedTextForLogin: UILabelDeviceClass!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         
         
-//        let forgotPasswordTap = UITapGestureRecognizer(target: self, action: #selector(self.forgotButtonPressed));
-//        forgotPasswordLabelButton?.isUserInteractionEnabled = true;
-//        forgotPasswordLabelButton?.addGestureRecognizer(forgotPasswordTap);
+        setupUiForAttributedText()
     }
     
+    // Setting up UI for attributedText in view controller
+    func setupUiForAttributedText()  {
+        
+        let normalText = "Already a member? "
+
+        let boldText  = "Log In"
+
+        let attributedString = NSMutableAttributedString(string:normalText)
+
+        let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 13)]
+        let boldString = NSMutableAttributedString(string: boldText, attributes:attrs)
+
+        attributedString.append(boldString)
+        
+        attributedTextForLogin.attributedText = attributedString
+        
+        
+        let loginTextTap = UITapGestureRecognizer(target: self, action: #selector(self.loginTextPressed));
+        attributedTextForLogin?.isUserInteractionEnabled = true;
+        attributedTextForLogin?.addGestureRecognizer(loginTextTap);
+        
+        
+    }
     
+
     @objc
-    func forgotButtonPressed(sender:UITapGestureRecognizer) {
-        performSegue(withIdentifier: "gotoForgotPassword", sender: self);
+    func loginTextPressed(sender:UITapGestureRecognizer) {
+        performSegue(withIdentifier: "goToWelcomeBack", sender: self);
     }
+    
+    
+
     
     
     @IBAction func SignUpButtonPressed(_ sender: Any) {
