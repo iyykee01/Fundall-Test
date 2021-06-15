@@ -1,0 +1,6 @@
+framework module Pods_Fundall_Test {
+  umbrella header "Pods-Fundall Test-umbrella.h"
+
+  export *
+  module * { export * }
+}

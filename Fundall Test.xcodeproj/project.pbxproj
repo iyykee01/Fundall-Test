@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62425F4F009A57191F49A7FF /* Pods_Fundall_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F35241A9AC327259DC20D /* Pods_Fundall_Test.framework */; };
 		D068D17826783D2100D32807 /* WelcomeBackScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068D17726783D2100D32807 /* WelcomeBackScreenViewController.swift */; };
 		D068D17B26783D6C00D32807 /* SignInScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068D17A26783D6C00D32807 /* SignInScreenViewController.swift */; };
 		D068D17E2678415800D32807 /* ResponsiveFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068D17D2678415800D32807 /* ResponsiveFont.swift */; };
@@ -20,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1721608089584E35A1F9FE2E /* Pods-Fundall Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fundall Test.release.xcconfig"; path = "Target Support Files/Pods-Fundall Test/Pods-Fundall Test.release.xcconfig"; sourceTree = "<group>"; };
+		195E448454D53B045F4C8246 /* Pods-Fundall Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fundall Test.debug.xcconfig"; path = "Target Support Files/Pods-Fundall Test/Pods-Fundall Test.debug.xcconfig"; sourceTree = "<group>"; };
+		9A0F35241A9AC327259DC20D /* Pods_Fundall_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fundall_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D068D17726783D2100D32807 /* WelcomeBackScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBackScreenViewController.swift; sourceTree = "<group>"; };
 		D068D17A26783D6C00D32807 /* SignInScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenViewController.swift; sourceTree = "<group>"; };
 		D068D17D2678415800D32807 /* ResponsiveFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveFont.swift; sourceTree = "<group>"; };
@@ -39,12 +43,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62425F4F009A57191F49A7FF /* Pods_Fundall_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CAC34F626F77DB6A50F8748 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				195E448454D53B045F4C8246 /* Pods-Fundall Test.debug.xcconfig */,
+				1721608089584E35A1F9FE2E /* Pods-Fundall Test.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C124089813E8E7163DEA0663 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A0F35241A9AC327259DC20D /* Pods_Fundall_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D068D17326783C8200D32807 /* Sign Up Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +115,8 @@
 			children = (
 				D0B1C07E26771D1300F7FC6F /* Fundall Test */,
 				D0B1C07D26771D1300F7FC6F /* Products */,
+				0CAC34F626F77DB6A50F8748 /* Pods */,
+				C124089813E8E7163DEA0663 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0B1C09026771D1500F7FC6F /* Build configuration list for PBXNativeTarget "Fundall Test" */;
 			buildPhases = (
+				31B2B9B3A9E5FEAD00E20472 /* [CP] Check Pods Manifest.lock */,
 				D0B1C07826771D1300F7FC6F /* Sources */,
 				D0B1C07926771D1300F7FC6F /* Frameworks */,
 				D0B1C07A26771D1300F7FC6F /* Resources */,
+				D62AFFAED953056EA412F6FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,6 +250,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31B2B9B3A9E5FEAD00E20472 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fundall Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D62AFFAED953056EA412F6FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fundall Test/Pods-Fundall Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fundall Test/Pods-Fundall Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fundall Test/Pods-Fundall Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0B1C07826771D1300F7FC6F /* Sources */ = {
@@ -379,6 +448,7 @@
 		};
 		D0B1C09126771D1500F7FC6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 195E448454D53B045F4C8246 /* Pods-Fundall Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -398,6 +468,7 @@
 		};
 		D0B1C09226771D1500F7FC6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1721608089584E35A1F9FE2E /* Pods-Fundall Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
