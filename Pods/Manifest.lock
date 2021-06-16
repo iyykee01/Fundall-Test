@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (5.4.3)
+  - KeychainAccess (4.2.2)
   - Kingfisher (6.3.0)
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
+  - KeychainAccess
   - Kingfisher (~> 6.0)
   - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - KeychainAccess
     - Kingfisher
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: b93eff3fa347c2b47f319cc262c38df3daa5fe5a
+PODFILE CHECKSUM: 378c3d8db5483789490b8066776c01e75615e2d4
 
 COCOAPODS: 1.10.1

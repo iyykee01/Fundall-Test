@@ -8,15 +8,19 @@
 import Foundation
 import UIKit
 
-class AlertMessage {
+//Custom Alert for all view
+class AlertView: NSObject {
+
+    static let shared = AlertView()
     
-    static let shared = AlertMessage()
-    
-    func alertPop (status: String, message: String) {
-        // create the alert
+    class func showAlert(status: String, view: UIViewController , message: String, completion: @escaping() -> ()) {
         let alert = UIAlertController(title: status, message: message, preferredStyle: UIAlertController.Style.alert)
-        
-        // add an action (button)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+        DispatchQueue.main.async {
+            view.present(alert, animated: true, completion: nil)
+        }
+        
+        completion()
     }
 }

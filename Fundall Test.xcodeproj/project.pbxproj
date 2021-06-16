@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F94F32226792FB6008DC939 /* Founders Grotesk - Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F94F32126792FB6008DC939 /* Founders Grotesk - Bold Italic.otf */; };
+		2F94F32426792FF8008DC939 /* Founders Grotesk - Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F94F32326792FF8008DC939 /* Founders Grotesk - Bold.otf */; };
+		2F94F32626793014008DC939 /* Founders Grotesk - Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F94F32526793014008DC939 /* Founders Grotesk - Light Italic.otf */; };
+		2F94F32826793026008DC939 /* Founders Grotesk - Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F94F32726793026008DC939 /* Founders Grotesk - Light.otf */; };
+		2F94F32A26793031008DC939 /* Founders Grotesk - Medium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F94F32926793031008DC939 /* Founders Grotesk - Medium Italic.otf */; };
+		2F94F32E26793057008DC939 /* Founders Grotesk - Regular Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F94F32D26793057008DC939 /* Founders Grotesk - Regular Italic.otf */; };
+		2F94F33126793070008DC939 /* Founders Grotesk - Semibold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F94F33026793070008DC939 /* Founders Grotesk - Semibold Italic.otf */; };
+		2F94F334267930BC008DC939 /* Founders Grotesk - Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F94F333267930BC008DC939 /* Founders Grotesk - Medium.otf */; };
+		2F94F337267936FE008DC939 /* ExtensionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94F336267936FE008DC939 /* ExtensionClass.swift */; };
 		62425F4F009A57191F49A7FF /* Pods_Fundall_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F35241A9AC327259DC20D /* Pods_Fundall_Test.framework */; };
 		D00BE9FF26787E3100A70F5D /* Register User Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00BE9FE26787E3100A70F5D /* Register User Model.swift */; };
 		D00BEA03267890C200A70F5D /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00BEA02267890C200A70F5D /* AlertMessage.swift */; };
@@ -25,6 +34,17 @@
 /* Begin PBXFileReference section */
 		1721608089584E35A1F9FE2E /* Pods-Fundall Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fundall Test.release.xcconfig"; path = "Target Support Files/Pods-Fundall Test/Pods-Fundall Test.release.xcconfig"; sourceTree = "<group>"; };
 		195E448454D53B045F4C8246 /* Pods-Fundall Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fundall Test.debug.xcconfig"; path = "Target Support Files/Pods-Fundall Test/Pods-Fundall Test.debug.xcconfig"; sourceTree = "<group>"; };
+		2F94F32126792FB6008DC939 /* Founders Grotesk - Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Founders Grotesk - Bold Italic.otf"; sourceTree = "<group>"; };
+		2F94F32326792FF8008DC939 /* Founders Grotesk - Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Founders Grotesk - Bold.otf"; sourceTree = "<group>"; };
+		2F94F32526793014008DC939 /* Founders Grotesk - Light Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Founders Grotesk - Light Italic.otf"; sourceTree = "<group>"; };
+		2F94F32726793026008DC939 /* Founders Grotesk - Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Founders Grotesk - Light.otf"; sourceTree = "<group>"; };
+		2F94F32926793031008DC939 /* Founders Grotesk - Medium Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Founders Grotesk - Medium Italic.otf"; sourceTree = "<group>"; };
+		2F94F32D26793057008DC939 /* Founders Grotesk - Regular Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Founders Grotesk - Regular Italic.otf"; sourceTree = "<group>"; };
+		2F94F32F2679305F008DC939 /* Founders Grotesk - Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Founders Grotesk - Regular.otf"; sourceTree = "<group>"; };
+		2F94F33026793070008DC939 /* Founders Grotesk - Semibold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Founders Grotesk - Semibold Italic.otf"; sourceTree = "<group>"; };
+		2F94F33226793078008DC939 /* Founders Grotesk - Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Founders Grotesk - Semibold.otf"; sourceTree = "<group>"; };
+		2F94F333267930BC008DC939 /* Founders Grotesk - Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Founders Grotesk - Medium.otf"; sourceTree = "<group>"; };
+		2F94F336267936FE008DC939 /* ExtensionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionClass.swift; sourceTree = "<group>"; };
 		9A0F35241A9AC327259DC20D /* Pods_Fundall_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fundall_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00BE9FE26787E3100A70F5D /* Register User Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Register User Model.swift"; sourceTree = "<group>"; };
 		D00BEA02267890C200A70F5D /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
@@ -61,6 +81,31 @@
 				1721608089584E35A1F9FE2E /* Pods-Fundall Test.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		2F94F32026792F9B008DC939 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2F94F32126792FB6008DC939 /* Founders Grotesk - Bold Italic.otf */,
+				2F94F32326792FF8008DC939 /* Founders Grotesk - Bold.otf */,
+				2F94F32526793014008DC939 /* Founders Grotesk - Light Italic.otf */,
+				2F94F32926793031008DC939 /* Founders Grotesk - Medium Italic.otf */,
+				2F94F32D26793057008DC939 /* Founders Grotesk - Regular Italic.otf */,
+				2F94F33226793078008DC939 /* Founders Grotesk - Semibold.otf */,
+				2F94F32F2679305F008DC939 /* Founders Grotesk - Regular.otf */,
+				2F94F33026793070008DC939 /* Founders Grotesk - Semibold Italic.otf */,
+				2F94F333267930BC008DC939 /* Founders Grotesk - Medium.otf */,
+				2F94F32726793026008DC939 /* Founders Grotesk - Light.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2F94F335267936E8008DC939 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F94F336267936FE008DC939 /* ExtensionClass.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C124089813E8E7163DEA0663 /* Frameworks */ = {
@@ -142,8 +187,9 @@
 		D0B1C07E26771D1300F7FC6F /* Fundall Test */ = {
 			isa = PBXGroup;
 			children = (
+				2F94F335267936E8008DC939 /* Extensions */,
+				2F94F32026792F9B008DC939 /* Fonts */,
 				D00BEA002678909E00A70F5D /* Alert */,
-				D0B5A8592678533E00799002 /* Font Family */,
 				D068D17C2678411600D32807 /* Helper Functions */,
 				D0B1C09626771ECE00F7FC6F /* Api Resources */,
 				D0B1C09326771EA400F7FC6F /* Model */,
@@ -188,13 +234,6 @@
 				D0B5A85A26786EBF00799002 /* NetworkingClass.swift */,
 			);
 			path = "Api Resources";
-			sourceTree = "<group>";
-		};
-		D0B5A8592678533E00799002 /* Font Family */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Font Family";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +296,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B1C08C26771D1500F7FC6F /* LaunchScreen.storyboard in Resources */,
+				2F94F32826793026008DC939 /* Founders Grotesk - Light.otf in Resources */,
 				D0B1C08926771D1500F7FC6F /* Assets.xcassets in Resources */,
+				2F94F32426792FF8008DC939 /* Founders Grotesk - Bold.otf in Resources */,
+				2F94F32A26793031008DC939 /* Founders Grotesk - Medium Italic.otf in Resources */,
+				2F94F32226792FB6008DC939 /* Founders Grotesk - Bold Italic.otf in Resources */,
+				2F94F33126793070008DC939 /* Founders Grotesk - Semibold Italic.otf in Resources */,
+				2F94F334267930BC008DC939 /* Founders Grotesk - Medium.otf in Resources */,
+				2F94F32626793014008DC939 /* Founders Grotesk - Light Italic.otf in Resources */,
+				2F94F32E26793057008DC939 /* Founders Grotesk - Regular Italic.otf in Resources */,
 				D0B1C08726771D1300F7FC6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F94F337267936FE008DC939 /* ExtensionClass.swift in Sources */,
 				D0B5A85B26786EBF00799002 /* NetworkingClass.swift in Sources */,
 				D00BEA03267890C200A70F5D /* AlertMessage.swift in Sources */,
 				D00BE9FF26787E3100A70F5D /* Register User Model.swift in Sources */,

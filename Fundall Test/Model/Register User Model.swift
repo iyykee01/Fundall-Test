@@ -16,3 +16,24 @@ struct RegisterUser: Encodable {
     var password_confirmation: String
 
 }
+
+
+
+struct LoginUser: Encodable {
+    var email: String
+    var password: String
+}
+
+
+struct UserData: Encodable {
+    var email: String
+    var expires_at: String
+    var id: String
+    var monthly_target: String
+    var updated_at: String
+    var lastname: String
+    var created_at: String
+    var firstname: String
+    var avatar: String
+}
+

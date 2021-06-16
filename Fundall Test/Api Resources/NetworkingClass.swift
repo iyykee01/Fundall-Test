@@ -58,7 +58,42 @@ class Networking {
                 
             }
     }
-
+    
+    
+    
+    //Login User
+    func loginUserApi(path: String, login: LoginUser, completion: @escaping(Bool, JSON) -> ()) {
+        
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json"
+        ]
+        
+        let registerUrl = baseURL + path
+        
+        AF.request(registerUrl, method: .post, parameters: login, encoder: JSONParameterEncoder.default, headers: headers)
+            .response { response in
+                //debugPrint(response)
+                switch response.result {
+                
+                case .success(let data):
+                    do {
+                        let json = JSON(data!)
+                        if response.response?.statusCode == 200 {
+                            completion(true, json)
+                         
+                        }
+                        else {
+                           completion(false, json)
+                        }
+                    }
+                    
+                case .failure(let err):
+                    print(err.localizedDescription)
+                    completion(false, [])
+                }
+                
+            }
+    }
     
 }
 

@@ -9,6 +9,7 @@ target 'Fundall Test' do
   pod 'Kingfisher', '~> 6.0'
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'KeychainAccess'
 
 
 end
