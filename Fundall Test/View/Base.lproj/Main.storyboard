@@ -700,7 +700,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Lf-CU-Ynb" customClass="UILabelDeviceClass" customModule="Fundall_Test" customModuleProvider="target">
-                                <rect key="frame" x="121.66666666666667" y="100" width="170.66666666666663" height="27"/>
+                                <rect key="frame" x="114.33333333333333" y="100" width="185.33333333333337" height="31.666666666666657"/>
                                 <fontDescription key="fontDescription" name="FoundersGrotesk-Medium" family="Founders Grotesk" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -711,7 +711,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h0f-3h-hrC">
-                                <rect key="frame" x="137" y="177" width="140" height="140"/>
+                                <rect key="frame" x="137" y="181.66666666666666" width="140" height="139.99999999999997"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="Ijx-DS-rM2">
@@ -730,7 +730,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AWl-oU-ta3" customClass="UILabelDeviceClass" customModule="Fundall_Test" customModuleProvider="target">
-                                <rect key="frame" x="207" y="350" width="0.0" height="0.0"/>
+                                <rect key="frame" x="207" y="354.66666666666669" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="FoundersGrotesk-RegularItalic" family="Founders Grotesk" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -741,7 +741,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nOo-0C-1Ah" customClass="UILabelDeviceClass" customModule="Fundall_Test" customModuleProvider="target">
-                                <rect key="frame" x="207" y="347" width="0.0" height="0.0"/>
+                                <rect key="frame" x="207" y="351.66666666666669" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="FoundersGrotesk-Medium" family="Founders Grotesk" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -752,14 +752,14 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uc1-cu-WCp">
-                                <rect key="frame" x="16" y="16" width="382" height="24"/>
+                                <rect key="frame" x="16" y="16" width="382" height="26"/>
                                 <fontDescription key="fontDescription" name="FoundersGrotesk-Regular" family="Founders Grotesk" pointSize="12"/>
                                 <state key="normal" title="cancel">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfF-LM-Eqo">
-                                <rect key="frame" x="40" y="395" width="334" height="29.333333333333314"/>
+                                <rect key="frame" x="40" y="399.66666666666669" width="334" height="29.333333333333314"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="tY0-Z0-ogf">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="29.333333333333332"/>
@@ -820,14 +820,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zF-OW-QyE">
-                                <rect key="frame" x="40" y="424.33333333333331" width="334" height="1"/>
+                                <rect key="frame" x="40" y="429" width="334" height="1"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="IP4-Gc-3jW"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n09-1Z-9s7">
-                                <rect key="frame" x="16" y="485.33333333333331" width="382" height="36.999999999999943"/>
+                                <rect key="frame" x="16" y="490" width="382" height="37"/>
                                 <color key="backgroundColor" red="0.29803921570000003" green="0.90980392160000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <color key="tintColor" systemColor="labelColor"/>
@@ -844,7 +844,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New here? Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twJ-GC-o0f" customClass="UILabelDeviceClass" customModule="Fundall_Test" customModuleProvider="target">
-                                <rect key="frame" x="16" y="552.33333333333337" width="382" height="12"/>
+                                <rect key="frame" x="16" y="557" width="382" height="14"/>
                                 <fontDescription key="fontDescription" name="FoundersGrotesk-Regular" family="Founders Grotesk" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -855,7 +855,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="YDl-VJ-GMd">
-                                <rect key="frame" x="197" y="492.33333333333331" width="20" height="19.999999999999943"/>
+                                <rect key="frame" x="197" y="497" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yS4-8j-fGR"/>
