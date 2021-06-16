@@ -7,6 +7,7 @@
 
 import UIKit
 import KeychainAccess
+import Kingfisher
 
 class WelcomeBackScreenViewController: UIViewController {
 
@@ -35,13 +36,29 @@ class WelcomeBackScreenViewController: UIViewController {
     // Setting up UI for attributedText in view controller
     func setupUiForAttributedText()  {
         
+        //check if user avarta exist and display avarta
+        let avatarUrl = UserDefaults.standard.object(forKey: "avatarUrl");
+        
+        if avatarUrl != nil {
+            avatarImage.kf.setImage(with: URL(string: avatarUrl as! String))
+        }
+        
+        
+        
         //Getting user name from UserDefault
-        let name = UserDefaults.standard.string(forKey: "userName")!
-        let email = UserDefaults.standard.string(forKey: "email")!
         
-        missYouText.text = "We miss you, \(name)"
-        emailText.text = email
+        var  name = UserDefaults.standard.object(forKey: "userName")
+        var  email = UserDefaults.standard.object(forKey: "email")
         
+        if UserDefaults.standard.object(forKey: "email") != nil && UserDefaults.standard.object(forKey: "userName") != nil {
+            //Key exists
+            email = UserDefaults.standard.string(forKey: "email")!
+            name = UserDefaults.standard.string(forKey: "userName")!
+            
+            missYouText.text = "We miss you, \(name ?? "")"
+            emailText.text = email as? String
+        }
+       
         let normalText = "New here? "
 
         let boldText  = "Create Account"
@@ -100,7 +117,11 @@ extension WelcomeBackScreenViewController {
         loginButton.isHidden = true
         
         //Login user with data stored
-        let email = UserDefaults.standard.string(forKey: "email")!
+        var email = ""
+        
+        if UserDefaults.standard.object(forKey: "email") != nil {
+            email = UserDefaults.standard.string(forKey: "email")!
+        }
         let password = passwordTextField.text!
         
         let loginDetials = LoginUser(email: email, password: password)

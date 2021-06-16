@@ -729,8 +729,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yustimisu@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AWl-oU-ta3" customClass="UILabelDeviceClass" customModule="Fundall_Test" customModuleProvider="target">
-                                <rect key="frame" x="142.33333333333337" y="377" width="129.66666666666663" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AWl-oU-ta3" customClass="UILabelDeviceClass" customModule="Fundall_Test" customModuleProvider="target">
+                                <rect key="frame" x="207" y="350" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="FoundersGrotesk-RegularItalic" family="Founders Grotesk" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -740,8 +740,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We miss you, Chimdi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nOo-0C-1Ah" customClass="UILabelDeviceClass" customModule="Fundall_Test" customModuleProvider="target">
-                                <rect key="frame" x="92.666666666666686" y="347" width="229" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nOo-0C-1Ah" customClass="UILabelDeviceClass" customModule="Fundall_Test" customModuleProvider="target">
+                                <rect key="frame" x="207" y="347" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="FoundersGrotesk-Medium" family="Founders Grotesk" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -759,7 +759,7 @@
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfF-LM-Eqo">
-                                <rect key="frame" x="40" y="437" width="334" height="29.333333333333314"/>
+                                <rect key="frame" x="40" y="395" width="334" height="29.333333333333314"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="tY0-Z0-ogf">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="29.333333333333332"/>
@@ -820,14 +820,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zF-OW-QyE">
-                                <rect key="frame" x="40" y="466.33333333333331" width="334" height="1"/>
+                                <rect key="frame" x="40" y="424.33333333333331" width="334" height="1"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="IP4-Gc-3jW"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n09-1Z-9s7">
-                                <rect key="frame" x="16" y="527.33333333333337" width="382" height="37"/>
+                                <rect key="frame" x="16" y="485.33333333333331" width="382" height="36.999999999999943"/>
                                 <color key="backgroundColor" red="0.29803921570000003" green="0.90980392160000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <color key="tintColor" systemColor="labelColor"/>
@@ -844,7 +844,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New here? Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twJ-GC-o0f" customClass="UILabelDeviceClass" customModule="Fundall_Test" customModuleProvider="target">
-                                <rect key="frame" x="16" y="594.33333333333337" width="382" height="12"/>
+                                <rect key="frame" x="16" y="552.33333333333337" width="382" height="12"/>
                                 <fontDescription key="fontDescription" name="FoundersGrotesk-Regular" family="Founders Grotesk" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -855,7 +855,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="YDl-VJ-GMd">
-                                <rect key="frame" x="197" y="534.33333333333337" width="20" height="20"/>
+                                <rect key="frame" x="197" y="492.33333333333331" width="20" height="19.999999999999943"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yS4-8j-fGR"/>
@@ -913,10 +913,25 @@
                     <view key="view" contentMode="scaleToFill" id="itQ-Rt-iXH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the dash board." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLk-9K-dbF">
+                                <rect key="frame" x="100" y="357.66666666666669" width="214" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3gU-kw-6aO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lLk-9K-dbF" firstAttribute="centerY" secondItem="itQ-Rt-iXH" secondAttribute="centerY" id="Dv2-l8-Mgn"/>
+                            <constraint firstItem="lLk-9K-dbF" firstAttribute="centerX" secondItem="itQ-Rt-iXH" secondAttribute="centerX" id="bGK-y9-4xF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CoB-0O-rVI"/>
+                    <connections>
+                        <segue destination="KrQ-YS-YE8" kind="show" identifier="goNext" id="6qw-VC-JGz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lyn-Ah-JrA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1126,10 +1141,11 @@
                             <constraint firstItem="ct3-sS-f5r" firstAttribute="leading" secondItem="G9D-nn-ye2" secondAttribute="leading" constant="16" id="x3d-qI-kPN"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="bQJ-6q-MiB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uZS-Pn-VhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3999" y="-273"/>
+            <point key="canvasLocation" x="3084" y="-273"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7d1-6f-lT8">
