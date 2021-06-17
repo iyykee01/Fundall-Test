@@ -15,6 +15,7 @@ class SignInScreenViewController: UIViewController {
     @IBOutlet weak var switchAccountLabel: UILabelDeviceClass!
     @IBOutlet weak var createAccountLabel: UILabelDeviceClass!
     
+    var userData: UserData!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,7 @@ class SignInScreenViewController: UIViewController {
         
         //Getting user name from UserDefault
         let name = UserDefaults.standard.string(forKey: "userName")!
-        nameLabel.text = "\(String(describing: name))'s"
+        nameLabel.text = "\(String(describing: name))'s lifestyle"
         
         //Allows tap on creat account Label
         let createTextTap = UITapGestureRecognizer(target: self, action: #selector(self.createTextPressed));
@@ -78,6 +79,7 @@ class SignInScreenViewController: UIViewController {
         //Login user with data stored
         let email = UserDefaults.standard.string(forKey: "email")!
         
+        //Getting data from keychain
         let keychain = Keychain(service: "com.fundall.test.Fundall-Test")
         let password = keychain["userPassword"]!
         
@@ -90,7 +92,24 @@ class SignInScreenViewController: UIViewController {
             if isSuccess {
                 print(json)
                 AlertView.showAlert(status: json["success"]["status"].stringValue, view: self, message: json["success"]["message"].stringValue) {
-                    //performSegue(withIdentifier: "goToSignIn", sender: self)
+                    UserDefaults.standard.setValue(json["success"]["user"]["avatar"].stringValue, forKey: "avatarUrl");
+                
+                    //Storing our password in keychain for Apple's protection and verification process
+                    let keychain = Keychain(service: "com.fundall.test.Fundall-Test")
+                    keychain["accessToken"] = json["success"]["user"]["access_token"].stringValue
+                    
+                    self.userData = UserData(
+                        email: json["success"]["user"]["email"].stringValue,
+                        expires_at: json["success"]["user"]["expires_at"].stringValue,
+                        id: json["success"]["user"]["id"].stringValue,
+                        monthly_target: json["success"]["user"]["monthly_target"].stringValue,
+                        updated_at: json["success"]["user"]["updated_at"].stringValue,
+                        lastname: json["success"]["user"]["lastname"].stringValue,
+                        created_at: json["success"]["user"]["created_at"].stringValue,
+                        firstname: json["success"]["user"]["firstname"].stringValue,
+                        avatar: json["success"]["user"]["avatar"].stringValue
+                        )
+                    performSegue(withIdentifier: "goToDashboard", sender: self)
                 }
             }
             else {

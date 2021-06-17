@@ -163,6 +163,19 @@ extension WelcomeBackScreenViewController {
 }
 
 
+//passing data between view controllers
+extension WelcomeBackScreenViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToDashBoard" {
+            let destination = segue.destination as! DashboardViewController
+            destination.userData = userData
+        }
+        
+    }
+}
+
+
+//Handling textfield delegate method
 extension WelcomeBackScreenViewController: UITextFieldDelegate {
 
     //*********Make view move up when keyboard shows**********//

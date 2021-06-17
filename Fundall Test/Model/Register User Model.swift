@@ -37,3 +37,9 @@ struct UserData: Encodable {
     var avatar: String
 }
 
+
+
+struct UploadAvartar: Codable {
+    var avatar: Data
+}
+

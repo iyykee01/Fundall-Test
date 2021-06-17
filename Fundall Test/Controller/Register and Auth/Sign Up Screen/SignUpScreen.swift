@@ -21,6 +21,9 @@ class SignUpScreen: UIViewController {
     @IBOutlet weak var attributedTextForLogin: UILabelDeviceClass!
     @IBOutlet weak var signupButton: UIButton!
     
+    
+    var passwordIsHidden = true
+    
     var viewJumpHeight: CGFloat = -50
     
     override func viewDidLoad() {
@@ -51,7 +54,6 @@ class SignUpScreen: UIViewController {
         attributedTextForLogin?.isUserInteractionEnabled = true;
         attributedTextForLogin?.addGestureRecognizer(loginTextTap);
         
-    
     }
     
 
