@@ -685,7 +685,7 @@
                         <outlet property="createAccountLabel" destination="DgS-0R-qNh" id="c0L-wr-ZGK"/>
                         <outlet property="nameLabel" destination="gdO-Ux-9jq" id="SMf-Ns-Ls9"/>
                         <outlet property="switchAccountLabel" destination="ARs-WJ-wXu" id="vgo-Or-c9Z"/>
-                        <segue destination="sOP-j4-VKc" kind="show" identifier="goToDashboard" id="Upm-Iw-NvO"/>
+                        <segue destination="sOP-j4-VKc" kind="show" identifier="goToDashBoard" id="JEp-JM-cXa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3y-sl-n7x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1215,7 +1215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lyn-Ah-JrA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2448" y="84"/>
+            <point key="canvasLocation" x="2599" y="84"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4eg-Eu-ZY8">
@@ -1449,7 +1449,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Upm-Iw-NvO"/>
+        <segue reference="JEp-JM-cXa"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Disable Eye" width="17" height="17"/>

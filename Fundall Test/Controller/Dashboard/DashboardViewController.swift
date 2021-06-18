@@ -23,6 +23,7 @@ class DashboardViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         print(userData.email, userData.firstname, userData.avatar)
+        
 
         avatarImage.kf.setBackgroundImage(with: userData.avatar as? Resource, for: .normal)
 

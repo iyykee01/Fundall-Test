@@ -21,8 +21,6 @@ class SignInScreenViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        
         setupUI();
     }
     
@@ -90,7 +88,7 @@ class SignInScreenViewController: UIViewController {
             view.isUserInteractionEnabled = true
             
             if isSuccess {
-                print(json)
+                //print(json)
                 AlertView.showAlert(status: json["success"]["status"].stringValue, view: self, message: json["success"]["message"].stringValue) {
                     UserDefaults.standard.setValue(json["success"]["user"]["avatar"].stringValue, forKey: "avatarUrl");
                 
@@ -109,7 +107,7 @@ class SignInScreenViewController: UIViewController {
                         firstname: json["success"]["user"]["firstname"].stringValue,
                         avatar: json["success"]["user"]["avatar"].stringValue
                         )
-                    performSegue(withIdentifier: "goToDashboard", sender: self)
+                    performSegue(withIdentifier: "goToDashBoard", sender: self)
                 }
             }
             else {
@@ -117,6 +115,16 @@ class SignInScreenViewController: UIViewController {
             }
         }
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToDashBoard" {
+            let destination = segue.destination as! DashboardViewController
+            destination.userData = userData
+        }
+        
+    }
+
    
 }
 
@@ -130,6 +138,4 @@ extension SignInScreenViewController {
     @IBAction func biometricsButtonPressed(_ sender: Any) {
         login();
     }
-    
-    
 }
