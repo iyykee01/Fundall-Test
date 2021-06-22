@@ -20,6 +20,7 @@
 		62425F4F009A57191F49A7FF /* Pods_Fundall_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F35241A9AC327259DC20D /* Pods_Fundall_Test.framework */; };
 		D00BE9FF26787E3100A70F5D /* Register User Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00BE9FE26787E3100A70F5D /* Register User Model.swift */; };
 		D00BEA03267890C200A70F5D /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00BEA02267890C200A70F5D /* AlertMessage.swift */; };
+		D03EA8B6268166DC00276D60 /* App Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EA8B5268166DB00276D60 /* App Methods.swift */; };
 		D068D17826783D2100D32807 /* WelcomeBackScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068D17726783D2100D32807 /* WelcomeBackScreenViewController.swift */; };
 		D068D17B26783D6C00D32807 /* SignInScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068D17A26783D6C00D32807 /* SignInScreenViewController.swift */; };
 		D068D17E2678415800D32807 /* ResponsiveFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068D17D2678415800D32807 /* ResponsiveFont.swift */; };
@@ -50,6 +51,7 @@
 		9A0F35241A9AC327259DC20D /* Pods_Fundall_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fundall_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00BE9FE26787E3100A70F5D /* Register User Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Register User Model.swift"; sourceTree = "<group>"; };
 		D00BEA02267890C200A70F5D /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
+		D03EA8B5268166DB00276D60 /* App Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Methods.swift"; sourceTree = "<group>"; };
 		D068D17726783D2100D32807 /* WelcomeBackScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBackScreenViewController.swift; sourceTree = "<group>"; };
 		D068D17A26783D6C00D32807 /* SignInScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenViewController.swift; sourceTree = "<group>"; };
 		D068D17D2678415800D32807 /* ResponsiveFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveFont.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				D068D17D2678415800D32807 /* ResponsiveFont.swift */,
+				D03EA8B5268166DB00276D60 /* App Methods.swift */,
 			);
 			path = "Helper Functions";
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				D0B1C08426771D1300F7FC6F /* SignUpScreen.swift in Sources */,
 				D0B1C08026771D1300F7FC6F /* AppDelegate.swift in Sources */,
 				2F8DCB91267A827900A9EB9B /* DashboardViewController.swift in Sources */,
+				D03EA8B6268166DC00276D60 /* App Methods.swift in Sources */,
 				D068D17E2678415800D32807 /* ResponsiveFont.swift in Sources */,
 				D0B1C08226771D1300F7FC6F /* SceneDelegate.swift in Sources */,
 			);

@@ -97,11 +97,17 @@ class Networking {
     }
     
     
-    func uploadRequestAlamofire(parameters: [String: Data?], imageData: Data?, completion: @escaping(Bool, JSON) -> ()) {
+    //Upload image to server
+    func uploadRequestAlamofire(completion: @escaping(Bool, JSON) -> ()) {
         
         let url = "https://campaign.fundall.io/api/v1/base/avatar"
         let keychain = Keychain(service: "com.fundall.test.Fundall-Test")
         let getToken = keychain["accessToken"]!
+        
+        
+        let localPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let filePath = localPath.appendingPathComponent("userImage.png").path
+        let localImageUrl = URL(fileURLWithPath: filePath)
         
         let headers: HTTPHeaders = ["X-User-Agent": "ios",
                                     "Accept-Language": "en",
@@ -111,15 +117,9 @@ class Networking {
         ]
         
         AF.upload(multipartFormData: { (multipartFormData) in
-            for (key, val) in parameters {
-                multipartFormData.append("\(val)".data(using: String.Encoding.utf8)!, withName: key as String)
-            }
+            multipartFormData.append(localImageUrl, withName: "avatar")
             
-            if let data = imageData {
-                multipartFormData.append(data, withName: "file", fileName: "image.png", mimeType: "image/jpg")
-            }
-            
-        }, to: url, usingThreshold: UInt64.init(), method: .post, headers: headers)
+        }, to: url, method: .post, headers: headers)
         .response { response in
             //debugPrint(response)
             switch response.result {

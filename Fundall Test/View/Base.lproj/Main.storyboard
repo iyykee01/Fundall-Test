@@ -91,56 +91,56 @@
                                     <fragment content="By clicking on Sign up, you agree to our ">
                                         <attributes>
                                             <color key="NSColor" red="0.10588235294117647" green="0.14117647058823529" blue="0.12549019607843137" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="10" name="FoundersGroteskCond-Reg"/>
+                                            <font key="NSFont" metaFont="system" size="10"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="terms">
                                         <attributes>
                                             <color key="NSColor" red="0.30196078431372547" green="0.90980392156862744" blue="0.59215686274509804" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="10" name="FoundersGroteskCond-Reg"/>
+                                            <font key="NSFont" metaFont="system" size="10"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.10588235294117647" green="0.14117647058823529" blue="0.12549019607843137" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="10" name="FoundersGroteskCond-Reg"/>
+                                            <font key="NSFont" metaFont="system" size="10"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="&amp;">
                                         <attributes>
                                             <color key="NSColor" red="0.30196078431372547" green="0.90980392156862744" blue="0.59215686274509804" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="10" name="FoundersGroteskCond-Reg"/>
+                                            <font key="NSFont" metaFont="system" size="10"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.10588235294117647" green="0.14117647058823529" blue="0.12549019607843137" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="10" name="FoundersGroteskCond-Reg"/>
+                                            <font key="NSFont" metaFont="system" size="10"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="conditions">
                                         <attributes>
                                             <color key="NSColor" red="0.30196078431372547" green="0.90980392156862744" blue="0.59215686274509804" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="10" name="FoundersGroteskCond-Reg"/>
+                                            <font key="NSFont" metaFont="system" size="10"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" and ">
                                         <attributes>
                                             <color key="NSColor" red="0.10588235294117647" green="0.14117647058823529" blue="0.12549019607843137" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="10" name="FoundersGroteskCond-Reg"/>
+                                            <font key="NSFont" metaFont="system" size="10"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="privacy policy.">
                                         <attributes>
                                             <color key="NSColor" red="0.30196078431372547" green="0.90980392156862744" blue="0.59215686274509804" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="10" name="FoundersGroteskCond-Reg"/>
+                                            <font key="NSFont" metaFont="system" size="10"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -402,26 +402,19 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-SE-Gfe" customClass="UILabelDeviceClass" customModule="Fundall_Test" customModuleProvider="target">
-                                <rect key="frame" x="136.5" y="616.5" width="141.5" height="14"/>
+                                <rect key="frame" x="133.5" y="616.5" width="147.5" height="14.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Already a member?">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="12" name="FoundersGroteskCond-Reg"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" Log In">
                                         <attributes>
                                             <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="12" name="FoundersGroteskCond-Reg"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Log In">
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="12" name="FoundersGroteskCond-Bold"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -513,19 +506,19 @@
                                 <color key="backgroundColor" systemColor="linkColor"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgS-0R-qNh" customClass="UILabelDeviceClass" customModule="Fundall_Test" customModuleProvider="target">
-                                <rect key="frame" x="122.5" y="498" width="169" height="16.5"/>
+                                <rect key="frame" x="121" y="498" width="172.5" height="17"/>
                                 <attributedString key="attributedText">
                                     <fragment content="New here?">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="14" name="FoundersGroteskCond-Reg"/>
-                                            <font key="NSOriginalFont" size="14" name="FoundersGroteskCond-Reg"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="14"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" Create Account">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="14" name="FoundersGroteskCond-Bold"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -623,24 +616,12 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARs-WJ-wXu" customClass="UILabelDeviceClass" customModule="Fundall_Test" customModuleProvider="target">
-                                <rect key="frame" x="116.5" y="471" width="181" height="17"/>
+                                <rect key="frame" x="115.5" y="471" width="183.5" height="17"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Not Chimdi?">
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="14" name="FoundersGroteskCond-Reg"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
+                                    <fragment content="Not Chimdi? Switch Account">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <font key="NSFont" metaFont="system" size="14"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Switch Account">
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="14" name="FoundersGroteskCond-Bold"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -711,7 +692,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h0f-3h-hrC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h0f-3h-hrC">
                                 <rect key="frame" x="137" y="221" width="140" height="140"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <constraints>
@@ -962,21 +943,49 @@
                                                                             <action selector="logoutButtonPressed:" destination="sOP-j4-VKc" eventType="touchUpInside" id="PUZ-NV-eBm"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuN-S4-Vc6">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VyT-AT-P2S">
                                                                         <rect key="frame" x="347.5" y="28" width="50.5" height="51"/>
-                                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e36-it-9ml">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="51"/>
+                                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="7"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </imageView>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuN-S4-Vc6">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="51"/>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="7"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                                <connections>
+                                                                                    <action selector="uploadAvartarButtonPressed:" destination="sOP-j4-VKc" eventType="touchUpInside" id="66I-75-2Or"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="width" secondItem="AuN-S4-Vc6" secondAttribute="height" multiplier="1:1" id="ghE-dT-guN"/>
+                                                                            <constraint firstItem="e36-it-9ml" firstAttribute="leading" secondItem="VyT-AT-P2S" secondAttribute="leading" id="1ai-Kv-6Sn"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="e36-it-9ml" secondAttribute="trailing" id="6f7-6L-Afa"/>
+                                                                            <constraint firstAttribute="width" secondItem="VyT-AT-P2S" secondAttribute="height" multiplier="1:1" id="GXo-44-ifE"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="AuN-S4-Vc6" secondAttribute="bottom" id="KBC-7X-idW"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="AuN-S4-Vc6" secondAttribute="trailing" id="ULn-aW-YqX"/>
+                                                                            <constraint firstItem="e36-it-9ml" firstAttribute="top" secondItem="VyT-AT-P2S" secondAttribute="top" id="UdX-OO-q7S"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="e36-it-9ml" secondAttribute="bottom" id="a3N-AS-irh"/>
+                                                                            <constraint firstItem="AuN-S4-Vc6" firstAttribute="top" secondItem="VyT-AT-P2S" secondAttribute="top" id="bJe-Kc-F4f"/>
+                                                                            <constraint firstItem="AuN-S4-Vc6" firstAttribute="leading" secondItem="VyT-AT-P2S" secondAttribute="leading" id="pLy-Ly-azP"/>
                                                                         </constraints>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                                 <real key="value" value="7"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
-                                                                        <connections>
-                                                                            <action selector="uploadAvartarButtonPressed:" destination="sOP-j4-VKc" eventType="touchUpInside" id="66I-75-2Or"/>
-                                                                        </connections>
-                                                                    </button>
+                                                                    </view>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="L0z-PL-13v">
                                                                         <rect key="frame" x="50" y="195.5" width="314" height="59.5"/>
                                                                         <subviews>
@@ -1079,6 +1088,7 @@
                                                                     <constraint firstItem="mUx-zK-36c" firstAttribute="top" secondItem="ha8-ST-NeD" secondAttribute="top" constant="40" id="6Sb-77-qAS"/>
                                                                     <constraint firstItem="v7C-3H-Pd8" firstAttribute="centerY" secondItem="mUx-zK-36c" secondAttribute="centerY" constant="-4" id="768-Fc-Rx7"/>
                                                                     <constraint firstItem="v7C-3H-Pd8" firstAttribute="width" secondItem="cpM-qc-PLc" secondAttribute="width" multiplier="0.1" id="Cdi-yV-IZh"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="VyT-AT-P2S" secondAttribute="trailing" constant="16" id="Clv-7e-Pi8"/>
                                                                     <constraint firstAttribute="trailing" secondItem="Jj7-F5-DC6" secondAttribute="trailing" id="Euv-CC-pKC"/>
                                                                     <constraint firstAttribute="trailing" secondItem="6cT-dD-8YU" secondAttribute="trailing" constant="50" id="HDW-7T-TCM"/>
                                                                     <constraint firstItem="mUx-zK-36c" firstAttribute="centerX" secondItem="ha8-ST-NeD" secondAttribute="centerX" id="HHO-FI-G32"/>
@@ -1086,15 +1096,14 @@
                                                                     <constraint firstItem="L0z-PL-13v" firstAttribute="height" secondItem="cpM-qc-PLc" secondAttribute="height" multiplier="0.216" id="KFW-og-ac8"/>
                                                                     <constraint firstItem="Jj7-F5-DC6" firstAttribute="top" secondItem="ha8-ST-NeD" secondAttribute="top" id="LjM-kI-Bp0"/>
                                                                     <constraint firstItem="6cT-dD-8YU" firstAttribute="leading" secondItem="ha8-ST-NeD" secondAttribute="leading" constant="50" id="MOS-YS-J6y"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="AuN-S4-Vc6" secondAttribute="trailing" constant="16" id="Ppj-m5-PCd"/>
+                                                                    <constraint firstItem="VyT-AT-P2S" firstAttribute="width" secondItem="cpM-qc-PLc" secondAttribute="width" multiplier="0.122" id="NVs-ue-ACW"/>
                                                                     <constraint firstAttribute="bottom" secondItem="L0z-PL-13v" secondAttribute="bottom" constant="20" id="Pr1-fL-SCT"/>
-                                                                    <constraint firstItem="AuN-S4-Vc6" firstAttribute="centerY" secondItem="mUx-zK-36c" secondAttribute="centerY" id="Zy9-Co-uF2"/>
                                                                     <constraint firstItem="L0z-PL-13v" firstAttribute="leading" secondItem="ha8-ST-NeD" secondAttribute="leading" constant="50" id="cvt-H7-fPm"/>
                                                                     <constraint firstItem="v7C-3H-Pd8" firstAttribute="leading" secondItem="ha8-ST-NeD" secondAttribute="leading" constant="16" id="l0o-b4-Jbk"/>
                                                                     <constraint firstAttribute="bottom" secondItem="cpM-qc-PLc" secondAttribute="bottom" id="nKX-zS-CfN"/>
                                                                     <constraint firstAttribute="trailing" secondItem="L0z-PL-13v" secondAttribute="trailing" constant="50" id="pDC-ge-DlL"/>
+                                                                    <constraint firstItem="VyT-AT-P2S" firstAttribute="centerY" secondItem="mUx-zK-36c" secondAttribute="centerY" id="pJy-gH-bJV"/>
                                                                     <constraint firstAttribute="trailing" secondItem="cpM-qc-PLc" secondAttribute="trailing" id="q95-Tm-EQU"/>
-                                                                    <constraint firstItem="AuN-S4-Vc6" firstAttribute="width" secondItem="cpM-qc-PLc" secondAttribute="width" multiplier="0.122" id="r0H-7D-EBr"/>
                                                                     <constraint firstItem="L0z-PL-13v" firstAttribute="top" secondItem="6cT-dD-8YU" secondAttribute="bottom" constant="25" id="tdi-3h-mMz"/>
                                                                     <constraint firstItem="cpM-qc-PLc" firstAttribute="leading" secondItem="ha8-ST-NeD" secondAttribute="leading" id="tlt-Ul-8Ju"/>
                                                                 </constraints>
@@ -1209,7 +1218,7 @@
                     <navigationItem key="navigationItem" id="CoB-0O-rVI"/>
                     <connections>
                         <outlet property="activityIndicator" destination="EhX-T8-FvE" id="INd-Rm-ed2"/>
-                        <outlet property="avatarImage" destination="AuN-S4-Vc6" id="dpo-Af-DE8"/>
+                        <outlet property="avatarImage" destination="e36-it-9ml" id="uEt-lF-n1j"/>
                         <segue destination="KrQ-YS-YE8" kind="show" identifier="goNext" id="6qw-VC-JGz"/>
                     </connections>
                 </viewController>
@@ -1425,7 +1434,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uZS-Pn-VhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3084" y="-273"/>
+            <point key="canvasLocation" x="3417" y="-273"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7d1-6f-lT8">
@@ -1449,7 +1458,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JEp-JM-cXa"/>
+        <segue reference="kU3-sS-ElO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Disable Eye" width="17" height="17"/>
