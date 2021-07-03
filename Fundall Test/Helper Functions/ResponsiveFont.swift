@@ -40,7 +40,7 @@ class UILabelDeviceClass : UILabel {
             self.font = calculatedFont
             break
         default:
-            print("not an iPhone")
+            print("")
             break
         }
         

@@ -36,7 +36,8 @@ class DashboardViewController: UIViewController {
 }
 
 //Image camera delegate
-
+//Write image to device path
+//Upload image to server.
 extension DashboardViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     
     //This will open image gallery
@@ -104,10 +105,6 @@ extension DashboardViewController: UIImagePickerControllerDelegate, UINavigation
         }
 
     }
-    
-    
-    
-    
 }
 
 
